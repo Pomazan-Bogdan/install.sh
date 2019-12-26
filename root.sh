@@ -1,7 +1,6 @@
 #!/bin/bash
 
-adduser centos
-passwd centos
+adduser centos -p centos1@3fds4tg
 usermod -aG wheel centos
 passwd -d centos
 echo 'centos ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
