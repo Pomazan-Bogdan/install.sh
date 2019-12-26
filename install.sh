@@ -9,4 +9,5 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools
 $ git clone git://github.com/inishchith/autoenv.git ~/.autoenv
 rm .zshrc
 wget https://raw.githubusercontent.com/Pomazan-Bogdan/install.sh/master/.zshrc
+echo '/usr/bin/zsh' >> /etc/shells
 chsh -s $(which zsh)
