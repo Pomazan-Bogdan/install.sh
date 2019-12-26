@@ -7,5 +7,6 @@ curl https://raw.githubusercontent.com/canha/golang-tools-install-script/master/
 wget -q -O - https://raw.githubusercontent.com/canha/golang-tools-install-script/master/goinstall.sh | bash
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 $ git clone git://github.com/inishchith/autoenv.git ~/.autoenv
-
+rm .zshrc
+wget https://raw.githubusercontent.com/Pomazan-Bogdan/install.sh/master/.zshrc
 chsh -s $(which zsh)
