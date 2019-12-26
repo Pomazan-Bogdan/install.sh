@@ -1,7 +1,11 @@
 #!/bin/bash
 
-sudo yum update -y
-sudo yum install git mc htop wget zsh chrony screen -y
+adduser centos \
+passwd centos \
+usermod -aG wheel centos \
+sudo passwd -d centos \
+yum update -y
+yum install git mc htop wget zsh chrony screen -y
 sudo systemctl enable chronyd && sudo systemctl start chronyd && chronyc sources && \
 wget -q -O - https://raw.githubusercontent.com/canha/golang-tools-install-script/master/goinstall.sh | bash
 wget -q -O - https://raw.githubusercontent.com/canha/golang-tools-install-script/master/goinstall.sh | bash
