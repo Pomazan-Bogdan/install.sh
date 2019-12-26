@@ -1,4 +1,5 @@
 #!/bin/bash
+
 adduser centos & \
 passwd centos & \
 usermod -aG wheel centos & \
