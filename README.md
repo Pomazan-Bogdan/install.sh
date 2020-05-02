@@ -8,6 +8,7 @@ curl https://raw.githubusercontent.com/Pomazan-Bogdan/install.sh/master/root.sh 
 
 
 2. centos.sh  - запускать перезайдя под пользователем centos по 22222 порту
+
 curl https://raw.githubusercontent.com/Pomazan-Bogdan/install.sh/master/centos.sh | bash
 
 3. docker.sh - запускать если нужна работа с docker
