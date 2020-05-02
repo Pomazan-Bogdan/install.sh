@@ -2,7 +2,7 @@
 
 sudo dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
 sudo dnf makecache
-sudo dnfi -y --nobest docker-ce
+dnfi -y --nobest docker-ce
 sudo systemctl enable docker.service
 sudo systemctl start docker.service
 
