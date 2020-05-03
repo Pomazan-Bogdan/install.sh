@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo systemctl stop firewalld
+sudo systemctl disable firewalld
 sudo dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
 sudo dnf makecache
 dnfi -y --nobest docker-ce
