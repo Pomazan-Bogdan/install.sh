@@ -3,7 +3,7 @@ sudo dnf config-manager --setopt=fastestmirror=True --save
 sudo dnf update -y
 sudo dnf install chrony -y
 sudo dnf copr enable atim/ytop -y
-sudo dnf install ytop
+sudo dnf install ytop -y
 sudo dnf install docker-ce --nobest -y
 sudo systemctl enable docker.service
 sudo systemctl start docker.service
