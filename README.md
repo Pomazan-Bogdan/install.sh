@@ -14,3 +14,6 @@ curl https://raw.githubusercontent.com/Pomazan-Bogdan/install.sh/master/centos.s
 3. docker.sh - запускать если нужна работа с docker
 
 curl https://raw.githubusercontent.com/pomazanbohdan/install.sh/master/docker.sh | bash
+
+4 proxy.sh - поднималка телеграм прокси
+curl https://raw.githubusercontent.com/pomazanbohdan/install.sh/master/proxy.sh | bash
