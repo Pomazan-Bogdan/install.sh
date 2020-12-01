@@ -9,9 +9,6 @@ cp /root/.ssh/authorized_keys /home/centos/.ssh/authorized_keys
 chown -R centos:centos /home/centos/.ssh
 echo 'Port 22222' >> /etc/ssh/sshd_config
 echo 'PasswordAuthentication no' >> /etc/ssh/sshd_config
-systemctl enable firewalld --now
-firewall-cmd --permanent --add-port=22222/tcp
-firewall-cmd --reload
 echo '/usr/bin/zsh' >> /etc/shells
 dnf config-manager --setopt=fastestmirror=True --save
 dnf update -y
